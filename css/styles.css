@@ -84,6 +84,7 @@ body {
 }
 
 .icon-header-svg {
+  align-self: center;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -288,10 +289,11 @@ body {
   color: #212121;
 }
 .icon-client-svg {
-  fill: currentColor;
   width: 170px;
   height: 92px;
+  fill: currentColor;
 }
+
 .link-icon-client:hover,
 .link-icon-client:focus {
   color: var(--accent-color);
@@ -348,8 +350,7 @@ body {
 }
 
 .join {
-  display: flex;
-  margin-left: 70px;
+  margin: 12px auto 40px 70px;
 }
 .join-paragraf {
   color: #ffffff;
@@ -361,18 +362,29 @@ body {
 .join-list {
   display: flex;
   list-style: none;
+  margin-top: 20px;
+}
+.join-list > li + li {
+  margin-left: 10px;
 }
 
 .icon-join {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 
 .join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
 }
 /******* Оформление страницы Портфолио *******/
 
@@ -430,6 +442,7 @@ img {
 .img-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
 .title {
   font-style: normal;
   font-weight: 700;
