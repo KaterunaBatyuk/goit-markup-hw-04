@@ -294,6 +294,9 @@ body {
   fill: currentColor;
 }
 
+.link-icon-client {
+  color: #afb1b8;
+}
 .link-icon-client:hover,
 .link-icon-client:focus {
   color: var(--accent-color);
