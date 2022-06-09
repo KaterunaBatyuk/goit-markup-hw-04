@@ -117,8 +117,7 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/Imghero.jpg);
-  background-color: #2f303a;
-  /* max-width: 1600px; */
+  max-width: 1600рх;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,7 +213,7 @@ body {
 .group-icon {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 16px;
 }
 .list-icon:not(:last-child) {
@@ -227,20 +226,21 @@ body {
   margin-left: 32px;
 }
 .group-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   color: #afb1b8;
-  fill: #afb1b8;
+  border-radius: 50%;
 }
 .group-link:hover,
 .group-link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 .icon-work {
-  width: 20px;
-  height: 20px;
-  color: #afb1b8;
+  fill: currentColor;
 }
 
 .section-paragraph {
@@ -426,6 +426,8 @@ body {
 .button-secondary:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 img {
   display: block;
@@ -433,6 +435,10 @@ img {
 .link-img .link {
   color: var(--primary-text-color);
   text-decoration: none;
+}
+.img-element:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .link-img {
   display: flex;
@@ -479,6 +485,7 @@ img {
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 ul,
 a,
 p,
