@@ -289,12 +289,19 @@ body {
   color: #212121;
 }
 .icon-client-svg {
-  width: 170px;
-  height: 92px;
   fill: currentColor;
 }
 
 .link-icon-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   color: #afb1b8;
 }
 .link-icon-client:hover,
@@ -303,11 +310,10 @@ body {
   fill: var(--accent-color);
 }
 .icon-client-item {
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.link-icon-client {
-  display: block;
 }
 
 .link-contact:hover,
