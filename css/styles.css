@@ -306,9 +306,11 @@ body {
 }
 .link-icon-client:hover,
 .link-icon-client:focus {
+  border: 1px solid var(--accent-color);
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+
 .icon-client-item {
   width: 170px;
   height: 92px;
